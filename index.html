@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<!--Combinar varios idiomas en una sola página NO es una buena idea-->
+<!--Lo mejor es es tener AL MENOS subdominios, lo mejor son dominios-->
+<html lang="es">
+	<head>
+		<!--Esta declaración es para el navegador. Es aparte de la-->
+		<meta charset="utf-8" />
+		<!--Descripción de 160 caracteres que hace la URL, no es oblicatoria pero si es una buena idea. NO se debe repetir el meta description entre páginas.-->
+		<meta description="Mi primer proyecto en HTML5"/>
+		<!--Los meta keywords y tags no sirven para NADA sino solamente para gastar espacio-->
+		<!--Nunca se debe repetir el title dentro de la misma URL-->
+		<title>
+		Puls2014
+		</title>
+	</head>
+	<body>
+		<header>
+			<!--Al haber elementos UNICOS dentro del diseño es buena idea colocarles un id. Un id es una forma IRREPETIBLE de identificar los elementos.-->
+			<figure id="logo">
+				<img src="C:\Users\KeOt777\Documents\GitHub\Puls2014\logo.png"/>
+			</figure>
+			<h1>
+				Puls2014: Primer proyecto de HTML5
+			</h1>
+			<figure id="avatar">
+				<img src="C:\Users\KeOt777\Documents\GitHub\Puls2014\avatar.jpg" />
+			</figure>
+		</header>
+		<nav>
+			<ul>
+				<!--Al usar # se pone como URL de destino la misma URL donde se esta actualmente-->
+				<li><a href="#">Python</a></li>
+				<li><a href="#">HTML5</a></li>
+				<li><a href="#">Javascript</a></li>
+				<li><a href="#">CSS3</a></li>
+				<li><a href="#">Django</a></li>
+				<li id="publicar_nav">
+					<a href="#">Publicar</a>
+				</li>
+			</ul>
+		</nav>
+		<!--Se hace referencia a un id con # y a un class on . en CSS. Por ejemplo: #contenido y .item-->
+		<section id="contenido">
+			<!--Un class es repetible-->
+			<article class="item">
+				<figure class="imagen_item">
+					<img src="C:\Users\KeOt777\Documents\GitHub\Puls2014\imagen.jpg" />
+				</figure>
+				<h2 class="titulo_item">
+					<a href="#">
+						Título del artículo
+					</a>
+				</h2>
+				<div class="autor_item">
+					por: <a href="#">Kevin Ruiz</a>
+				</div>
+				<div clas="datos_item">
+					<a href="#" class="tag_item">Pony</a>
+					<span class="fecha_item">
+						hace <strong>5</strong> min
+					</span>
+					<a href="#" class="comentarios_item">70</a>
+					<a href="#" class="guardar_item"></a>
+				</div>
+				<div clas="votacion">
+					<a href="#" class="up"></a>
+					720
+					<a href="#" class="down"></a>
+				</div>
+			</article>
+		</section>
+		<footer>
+			<p>
+				<strong>Powered by KeOt777</strong>
+			</p>
+			<p>
+				mejorando.la 2014
+			</p>
+		</footer>
+	</body>
+</html>
